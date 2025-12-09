@@ -1,0 +1,15 @@
+body {
+    background: #bde6e6; /* matches your task background theme */
+}
+
+.card {
+    border-radius: 15px;
+}
+
+#userForm input {
+    border-radius: 8px;
+}
+
+#userForm button {
+    border-radius: 8px;
+}

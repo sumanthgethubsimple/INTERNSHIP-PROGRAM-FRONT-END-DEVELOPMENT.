@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3: JavaScript Interaction</title>
+</head>
+
+<body style="background:#f4b184; font-family:Arial, sans-serif; padding:20px;">
+
+    <h2>Objective:</h2>
+    <p>
+        Enhance user engagement by adding interactive elements and implementing
+        basic JavaScript functionality.
+    </p>
+
+    <h3>Steps:</h3>
+    <ol>
+        <li>Add a button element to index.html.</li>
+        <li>
+            Write JavaScript code in a &lt;script&gt; tag or a separate file 
+            (script.js) to change the background color when the button is clicked.
+        </li>
+        <li>
+            Test the functionality by clicking the button and observing the 
+            background color change.
+        </li>
+    </ol>
+
+    <hr>
+
+    <h3 style="color:green;">Demo Section (JavaScript Applied):</h3>
+
+    <!-- The button -->
+    <button id="colorBtn"
+        style="padding:12px 25px; font-size:18px; background:#000; color:white; border:none; border-radius:6px; cursor:pointer;">
+        Change Background Color
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        document.getElementById("colorBtn").onclick = function () {
+            document.body.style.backgroundColor = 
+                '#' + Math.floor(Math.random()*16777215).toString(16);
+        }
+    </script>
+
+</body>
+</html>
